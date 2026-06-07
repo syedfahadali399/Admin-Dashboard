@@ -48,36 +48,35 @@ function ForgotPassowrd() {
               </defs>
             </svg>
           </div>
-          <div className="bg-base-100 shadow-base-300/20 z-1 w-full space-y-6 rounded-xl p-6 shadow-md sm:max-w-md lg:p-8">
-            <div>
-              <h3 className="text-base-content mb-1.5 text-2xl font-semibold">
+          <div className="bg-white dark:bg-gray-800 shadow-xl z-10 w-full space-y-6 rounded-xl p-6 sm:max-w-md lg:p-8 border dark:border-gray-700">
+            <div className="text-center">
+              <h3 className="text-gray-900 dark:text-white mb-1.5 text-2xl font-semibold">
                 Forgot Password?
               </h3>
-              <p className="text-base-content/80">
-                Enter your email and we'll send you instructions to reset your
-                password
+              <p className="text-gray-500 dark:text-gray-400 text-sm">
+                Enter your email and we'll send you instructions to reset your password.
               </p>
             </div>
             <form className="mb-4 space-y-4">
               <div>
-                <label className="label-text" htmlFor="userEmail">
+                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" htmlFor="userEmail">
                   Email address 
                 </label>
                 <input
                   type="email"
                   placeholder="Enter your email address"
-                  className="border-2 border-black ml-4 rounded-lg p-2"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   id="userEmail"
                   required
                 />
               </div>
-              <button className="border-b-4 border-amber-400 text-cyan-700 cursor-pointer">
+              <button className="w-full text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800 transition-all duration-300 cursor-pointer">
                 Send Reset Link
               </button>
             </form>
-            <div className="bg-blue-600 group flex items-center justify-center gap-2 border-blue-600 text-white p-3 rounded-xl cursor-pointer">
+            <div className="bg-blue-600 hover:bg-blue-700 group flex items-center justify-center gap-2 text-white p-3 rounded-xl cursor-pointer transition-all duration-300">
               <span className="icon-[tabler--chevron-left] text-primary size-5 shrink-0 transition-transform group-hover:-translate-x-1 rtl:rotate-180"></span>
-              <Link to={"/"} className="link link-animated link-primary font-normal">
+              <Link to={"/"} className="font-semibold text-sm">
                 Back to login
               </Link>
             </div>
